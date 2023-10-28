@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  min-height: 100vh;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: #004987;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 20px;
+
+  margin-left: -70px;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+.logo h1:hover {
+  color: #00ddff;
+}
+.logo h1 span:hover {
+  color: #fff;
+}
+
+.logo span {
+  color: #00ddff;
+}
+.nav-bar {
+  display: flex;
+  gap: 10px;
+  margin-right: -70px;
+}
+.nav-bar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.nav-bar a:hover {
+  color: rgb(0, 0, 0);
+}
+.nav-bar a::after {
+  content: "";
+  display: block;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #000000;
+}
+.nav-bar a:hover::after {
+  width: 100%;
+}
+.search-bar {
+  margin-left: 50px;
+}
+.search-bar input {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  width: 200px;
+  height: 25px;
+  padding-left: 1em;
+}
+.search-bar button {
+  border: none;
+  outline: none;
+  background-color: #00ddff;
+  color: rgb(0, 0, 0);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-family: verdana;
+  transition: background 0.3s;
+}
+.search-bar button:hover {
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+}
